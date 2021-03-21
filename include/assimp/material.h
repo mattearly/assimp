@@ -162,7 +162,7 @@ enum aiTextureMapping {
     /** Planar mapping */
     aiTextureMapping_PLANE = 0x4,
 
-    /** Undefined mapping. Have fun. */
+    /** Undefined mapping. */
     aiTextureMapping_OTHER = 0x5,
 
 #ifndef SWIG
@@ -240,14 +240,14 @@ enum aiTextureType {
      *  The glossiness is in fact the exponent of the specular
      *  (phong) lighting equation. Usually there is a conversion
      *  function defined to map the linear color values in the
-     *  texture to a suitable exponent. Have fun.
+     *  texture to a suitable exponent.
     */
     aiTextureType_SHININESS = 7,
 
     /** The texture defines per-pixel opacity.
      *
      *  Usually 'white' means opaque and 'black' means
-     *  'transparency'. Or quite the opposite. Have fun.
+     *  'transparency'. Or quite the opposite.
     */
     aiTextureType_OPACITY = 8,
 
@@ -1535,7 +1535,7 @@ ASSIMP_API unsigned int aiGetMaterialTextureCount(const C_STRUCT aiMaterial *pMa
  *      pass a pointer to an array of two aiTextureMapMode's (one for each
  *      axis, UV order).
  *  @param[out] flags Receives the the texture flags.
- *  @return AI_SUCCESS on success, otherwise something else. Have fun.*/
+ *  @return AI_SUCCESS on success, otherwise something else.*/
 // ---------------------------------------------------------------------------
 #ifdef __cplusplus
 ASSIMP_API aiReturn aiGetMaterialTexture(const C_STRUCT aiMaterial *mat,
